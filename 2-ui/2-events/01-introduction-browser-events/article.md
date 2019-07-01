@@ -1,30 +1,30 @@
-# Introduction to browser events
+# Introducción a los eventos del navegador
 
-*An event* is a signal that something has happened. All DOM nodes generate such signals (but events are not limited to DOM).
+*Un evento* es una señal que refleja que algo ha pasado. Todos los nodos del DOM generan dichas señales (Aunque los eventos no se limitan solo al DOM).
 
-Here's a list of the most useful DOM events, just to take a look at:
+La siguiente es una lista de los evenntos del DOM más útiles:
 
-**Mouse events:**
-- `click` -- when the mouse clicks on an element (touchscreen devices generate it on a tap).
-- `contextmenu` -- when the mouse right-clicks on an element.
-- `mouseover` / `mouseout` -- when the mouse cursor comes over / leaves an element.
-- `mousedown` / `mouseup` -- when the mouse button is pressed / released over an element.
-- `mousemove` -- when the mouse is moved.
+**Eventos del ratón:**
+- `click` -- cuando el ratón hace clic sobre algún elemento (En pantallas táctiles se genera al toque).
+- `contextmenu` -- cuando el ratón hace clic derecho sobre un elemento.
+- `mouseover` / `mouseout` -- cuando el cursor del ratón está encima / cuando deja de estar encima.
+- `mousedown` / `mouseup` -- cuando el botón del ratón es presionado / cunado el botón es soltado.
+- `mousemove` -- cuando el se mueve el ratón.
 
-**Form element events:**
-- `submit` -- when the visitor submits a `<form>`.
-- `focus` --  when the visitor focuses on an element, e.g. on an `<input>`.
+**Eventos de los formularios:**
+- `submit` -- cuando un usuario sumite un formulario `<form>`.
+- `focus` --  cuando un uusario hace clic sobre un elemento, por ejemplo en un `<input>`.
 
-**Keyboard events:**
-- `keydown` and `keyup` -- when the visitor presses and then releases the button.
+**Eventos del teclado:**
+- `keydown` y `keyup` -- cuando el usuario presiona y suelta una tecla.
 
-**Document events:**
-- `DOMContentLoaded` -- when the HTML is loaded and processed, DOM is fully built.
+**Eventos del documento:**
+- `DOMContentLoaded` -- cuando el HTML es cargado y procesado, el DOM es construido por completo.
 
-**CSS events:**
-- `transitionend` -- when a CSS-animation finishes.
+**Eventos del CSS:**
+- `transitionend` -- cuando termina una animación de CSS.
 
-There are many other events. We'll get into more details of particular events in next chapters.
+Hay muchos otros eventos. Veremos algunos eventos particulares en más detalle en los siguientes capítulos.
 
 ## Event handlers
 
