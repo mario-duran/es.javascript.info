@@ -7,12 +7,12 @@ La siguiente es una lista de los evenntos del DOM más útiles:
 **Eventos del ratón:**
 - `click` -- cuando el ratón hace clic sobre algún elemento (En pantallas táctiles se genera al toque).
 - `contextmenu` -- cuando el ratón hace clic derecho sobre un elemento.
-- `mouseover` / `mouseout` -- cuando el cursor del ratón está encima / cuando deja de estar encima.
-- `mousedown` / `mouseup` -- cuando el botón del ratón es presionado / cunado el botón es soltado.
-- `mousemove` -- cuando el se mueve el ratón.
+- `mouseover` / `mouseout` -- cuando el cursor del ratón está encima de un elemento / cuando deja de estar encima del elemento.
+- `mousedown` / `mouseup` -- cuando el botón del ratón es presionado / cuando el botón es soltado.
+- `mousemove` -- cuando se mueve el ratón.
 
 **Eventos de los formularios:**
-- `submit` -- cuando un usuario sumite un formulario `<form>`.
+- `submit` -- cuando un usuario envía un formulario `<form>`.
 - `focus` --  cuando un uusario hace clic sobre un elemento, por ejemplo en un `<input>`.
 
 **Eventos del teclado:**
@@ -26,13 +26,13 @@ La siguiente es una lista de los evenntos del DOM más útiles:
 
 Hay muchos otros eventos. Veremos algunos eventos particulares en más detalle en los siguientes capítulos.
 
-## Event handlers
+## Manejadores de eventos
 
-To react on events we can assign a *handler* -- a function that runs in case of an event.
+Para reaccionar a un evento podemos asignar un *handler* -- una función que se ejecuta en caso de que ocurra un evento.
 
-Handlers are a way to run JavaScript code in case of user actions.
+Handlers  es la forma de ejecutar código de JavaScript en caso de interacción de los usuarios.
 
-There are several ways to assign a handler. Let's see them, starting from the simplest one.
+Hay muchas formas de asignar un manejador de eventos. Vamos a verlas, empezando por la más simple.
 
 ### HTML-attribute
 
