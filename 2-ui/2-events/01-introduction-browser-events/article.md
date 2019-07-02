@@ -30,23 +30,23 @@ Hay muchos otros eventos. Veremos algunos eventos particulares en más detalle e
 
 Para reaccionar a un evento podemos asignar un *handler* -- una función que se ejecuta en caso de que ocurra un evento.
 
-Handlers  es la forma de ejecutar código de JavaScript en caso de interacción de los usuarios.
+Manejadores de eventos permiten ejecutar código de JavaScript en caso de interacción de los usuarios con el DOM.
 
 Hay muchas formas de asignar un manejador de eventos. Vamos a verlas, empezando por la más simple.
 
-### HTML-attribute
+### Como atributo del HTML
 
-A handler can be set in HTML with an attribute named `on<event>`.
+Un manejdaro puede ser asignado como un atributo del HTML de la isguient manera `on<event>`.
 
-For instance, to assign a `click` handler for an `input`, we can use `onclick`, like here:
+Por ejemplo, para asignar un manejador para `click` en un `input`, podemo usar `onclick`, de la siguiente forma:
 
 ```html run
-<input value="Click me" *!*onclick="alert('Click!')"*/!* type="button">
+<input value="Haz clic" *!*onclick="alert('Clic!')"*/!* type="button">
 ```
 
-On mouse click, the code inside `onclick` runs.
+Cuando se hace clic con el ratón, se ejecuta el código dentro del `onclick`.
 
-Please note that inside `onclick` we use single quotes, because the attribute itself is in double quotes. If we forget that the code is inside the attribute and use double quotes inside, like this:  `onclick="alert("Click!")"`, then it won't work right.
+Es importante tener en cuenta que dentro del `onclick` se usan comillas sencillas, porque los atributos como tal usa comillas dobles. Si lo olvidamos y utilizamos comillas dobles dentro del atributo, algo como esto:  `onclick="alert("Clic!")"`, entonces el código retornará un error.
 
 An HTML-attribute is not a convenient place to write a lot of code, so we'd better create a JavaScript function and call it there.
 
